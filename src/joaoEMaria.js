@@ -10,9 +10,21 @@ function getMaria(){
     return maria;
 }
 function setJoao(valor){
+    if(valor<0)
+        valor=0;
    joao=valor;
 }
 function setMaria(valor){
+    if(valor<0)
+        valor=0;
     maria=valor;
  }
-export{ getJoao, getMaria };
+ function deJoaoParaMaria(){
+    maria+=joao;
+    joao=0;
+ }
+ function deMariaParaJoao(){
+    joao+=maria;
+    maria=0;
+ }
+export{ getJoao, getMaria,setJoao,setMaria,deJoaoParaMaria,deMariaParaJoao };
