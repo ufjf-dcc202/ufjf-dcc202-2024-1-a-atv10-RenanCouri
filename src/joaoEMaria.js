@@ -9,4 +9,10 @@ function getJoao(){
 function getMaria(){
     return maria;
 }
+function setJoao(valor){
+   joao=valor;
+}
+function setMaria(valor){
+    maria=valor;
+ }
 export{ getJoao, getMaria };
